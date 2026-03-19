@@ -1,0 +1,122 @@
+# ===================== React 核心忽略项 =====================
+# 1. 依赖包目录（体积大且可通过npm/yarn/pnpm重装）
+node_modules/
+
+# 2. 构建/打包产物（CRA/Vite 通用）
+build/
+dist/
+out/
+
+# 3. 环境变量文件（包含密钥、接口地址等敏感信息）
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 4. 缓存文件
+.cache/
+.eslintcache
+npm-cache/
+yarn-cache/
+
+# 5. 构建日志/报错日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+report.2023*.html
+
+# ===================== 操作系统相关 =====================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===================== 编辑器/IDE 配置 =====================
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains (WebStorm/IntelliJ/VS Code 插件)
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+.un~
+
+# ===================== 测试/类型相关 =====================
+# TypeScript 编译产物
+*.tsbuildinfo
+typings/
+types/generated/
+
+# Jest 测试
+coverage/
+jest.cache/
+test-results/
+
+# Cypress 测试
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# ===================== 其他常用忽略项 =====================
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.bak
+
+# 压缩包
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 性能分析文件
+*.cpuprofile
+*.heapprofile
+*.pprof
+
+# Docker 相关（如需版本控制可删除）
+.dockerignore
+docker-compose.override.yml
